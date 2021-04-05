@@ -4,24 +4,17 @@ import 'animated_download_button/adb_screen.dart';
 import '../core/routes.dart';
 import '../model/screen_entry_model.dart';
 import '../utils/extensions.dart';
+import '../utils/functions.dart' as functions;
 
 final _pages = <ScreenEntry>{
   ScreenEntry(
-      label: 'Animated Download Button',
-      route: AppRoutes.adb,
-      target: AdbScreen(),
-      launcher: (context) {
-        Navigator.of(context).push(PageRouteBuilder(
-            opaque: false,
-            fullscreenDialog: false,
-            maintainState: true,
-            transitionDuration: Duration(milliseconds: 550), //550
-            barrierDismissible: true,
-            barrierColor: Colors.black54,
-            pageBuilder: (ctx, _, __) {
-              return AdbScreen();
-            }));
-      }),
+    label: 'Animated Download Button',
+    route: AppRoutes.adb,
+    target: AdbScreen(),
+    launcher: (context) {
+      functions.customLauncher(target: AdbScreen(), context: context);
+    },
+  ),
 };
 
 class HomeScreen extends StatelessWidget {

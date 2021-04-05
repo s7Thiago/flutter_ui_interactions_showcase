@@ -63,12 +63,14 @@ extension PowerExtensions on Widget {
               onTap: () {
                 Navigator.pop(context);
               },
+              borderRadius: BorderRadius.circular(15),
+              splashColor: Colors.white,
               child: Container(
-                width: 20,
-                height: 20,
+                width: 25,
+                height: 25,
                 child: Icon(
                   Icons.close,
-                  size: 10,
+                  size: 15,
                   color: Colors.white,
                 ),
                 decoration: BoxDecoration(
