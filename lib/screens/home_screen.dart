@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'animated_download_button/adb_screen.dart';
+import 'custom_range_selector/crs_screen.dart';
 import '../core/routes.dart';
 import '../model/screen_entry_model.dart';
 import '../utils/extensions.dart';
@@ -15,6 +16,14 @@ final _pages = <ScreenEntry>{
       functions.customLauncher(target: AdbScreen(), context: context);
     },
   ),
+  ScreenEntry(
+    label: 'Custom Range Selector',
+    route: AppRoutes.crs,
+    target: MyRangeSelector(),
+    launcher: (context) {
+      functions.customLauncher(target: MyRangeSelector(), context: context);
+    },
+  )
 };
 
 class HomeScreen extends StatelessWidget {
@@ -44,7 +53,7 @@ class HomeList extends StatelessWidget {
             }
           },
           title: Text('${_getPage(index).label}'),
-        ).putElevatedHero(tag: 'adb');
+        ).putElevatedHero(tag: '${_getPage(index).label}');
       },
     );
   }

@@ -5,7 +5,7 @@ import '../../utils/extensions.dart';
 
 class AdbScreen extends StatelessWidget {
   _space([int qtde = 10]) => List.generate(qtde, (index) => SizedBox());
-  String _label = 'Animated Download Button';
+  final String _label = 'Animated Download Button';
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,6 +24,6 @@ class AdbScreen extends StatelessWidget {
           ),
         ),
       ).closeable(context: context),
-    ).putFloatingHero(tag: 'adb', context: context, title: _label);
+    ).putFloatingHero(tag: _label, context: context, title: _label);
   }
 }
