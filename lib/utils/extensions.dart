@@ -12,9 +12,16 @@ extension PowerExtensions on Widget {
     );
   }
 
-  putFloatingHero({required tag, required context, title = 'no title'}) {
+  putFloatingHero({
+    required tag,
+    required context,
+    title = 'no title',
+    Color titleColor = Colors.black87,
+    EdgeInsetsGeometry? margin =
+        const EdgeInsets.symmetric(horizontal: 30.0, vertical: 120.0),
+  }) {
     return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 30.0, vertical: 120.0),
+      margin: margin,
       child: Hero(
         tag: tag,
         child: Material(
@@ -29,13 +36,7 @@ extension PowerExtensions on Widget {
                 child: Text(
                   title,
                   style: TextStyle(
-                    shadows: [
-                      Shadow(
-                        color: Colors.grey,
-                        blurRadius: 2,
-                        offset: Offset(1, 1),
-                      ),
-                    ],
+                    color: titleColor,
                   ),
                 ),
               ),
