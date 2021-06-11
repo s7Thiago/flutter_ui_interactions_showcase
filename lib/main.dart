@@ -4,6 +4,7 @@ import 'core/routes.dart';
 import 'screens/home_screen.dart';
 import 'screens/animated_download_button/adb_screen.dart';
 import 'screens/custom_range_selector/crs_screen.dart';
+import 'screens/animated_action_buttons/animated_action_buttons_screen.dart';
 
 void main() => runApp(
       MaterialApp(
@@ -15,6 +16,7 @@ void main() => runApp(
           AppRoutes.home: (_) => HomeScreen(),
           AppRoutes.adb: (_) => AdbScreen(),
           AppRoutes.crs: (_) => MyRangeSelector(),
+          AppRoutes.aab: (_) => AnimatedActionButtonsScreen(),
         },
       ),
     );
