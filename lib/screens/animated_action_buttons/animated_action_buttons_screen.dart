@@ -4,7 +4,7 @@ import '../../utils/extensions.dart';
 import 'widgets/pay_button.dart';
 
 class AnimatedActionButtonsScreen extends StatelessWidget {
-  String _label = 'Animated action buttons';
+  final String _label = 'Animated action buttons';
 
   @override
   Widget build(BuildContext context) {
