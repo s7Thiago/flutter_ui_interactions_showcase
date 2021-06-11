@@ -161,9 +161,12 @@ class _PayButtonState extends State<PayButton> with TickerProviderStateMixin {
                       animating = false;
                     }));
           }).then((value) {
-            Future.delayed(Duration(milliseconds: 3500)).then(
+            Future.delayed(Duration(
+                    milliseconds:
+                        3500)) /* .then(
               (value) => Navigator.pop(context),
-            );
+            ) */
+                ;
           });
 
           widget.onTap!();

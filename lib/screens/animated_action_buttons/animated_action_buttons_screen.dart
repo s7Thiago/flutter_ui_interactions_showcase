@@ -12,11 +12,22 @@ class AnimatedActionButtonsScreen extends StatelessWidget {
       child: Scaffold(
         body: Center(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
+              SizedBox(height: 50),
               PayButton(
                 onTap: () {},
               ).onFlex(),
+              PayButton(
+                onTap: () {},
+              ).onFlex(),
+              PayButton(
+                onTap: () {},
+              ).onFlex(),
+              PayButton(
+                onTap: () {},
+              ).onFlex(),
+              SizedBox(height: 50),
             ],
           ),
         ),
