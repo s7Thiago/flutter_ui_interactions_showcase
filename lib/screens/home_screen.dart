@@ -11,7 +11,7 @@ import '../utils/functions.dart' as functions;
 final _pages = <ScreenEntry>{
   ScreenEntry(
     label: 'Animated Download Button',
-    route: AppRoutes.adb,
+    route: AppRoutes.animatedDownloadButton,
     target: AdbScreen(),
     urlInspiration: 'Youtube',
     launcher: (context) {
@@ -20,7 +20,7 @@ final _pages = <ScreenEntry>{
   ),
   ScreenEntry(
     label: 'Custom Range Selector',
-    route: AppRoutes.crs,
+    route: AppRoutes.customRangeSelector,
     target: MyRangeSelector(),
     urlInspiration: 'Youtube',
     launcher: (context) {
@@ -29,7 +29,7 @@ final _pages = <ScreenEntry>{
   ),
   ScreenEntry(
     label: 'Animated action buttons',
-    route: AppRoutes.crs,
+    route: AppRoutes.customRangeSelector,
     target: AnimatedActionButtonsScreen(),
     urlInspiration: 'Youtube',
     launcher: (context) {

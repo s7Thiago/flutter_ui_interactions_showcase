@@ -1,6 +1,6 @@
 class AppRoutes {
   static final String home = '/';
-  static final String adb = '/adb';
-  static final String crs = '/crs';
-  static final String aab = '/aab';
+  static final String animatedDownloadButton = '/adb';
+  static final String customRangeSelector = '/crs';
+  static final String animatedActionButton = '/aab';
 }

@@ -14,9 +14,9 @@ void main() => runApp(
         ),
         routes: {
           AppRoutes.home: (_) => HomeScreen(),
-          AppRoutes.adb: (_) => AdbScreen(),
-          AppRoutes.crs: (_) => MyRangeSelector(),
-          AppRoutes.aab: (_) => AnimatedActionButtonsScreen(),
+          AppRoutes.animatedDownloadButton: (_) => AdbScreen(),
+          AppRoutes.customRangeSelector: (_) => MyRangeSelector(),
+          AppRoutes.animatedActionButton: (_) => AnimatedActionButtonsScreen(),
         },
       ),
     );
